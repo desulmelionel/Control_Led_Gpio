@@ -10,9 +10,17 @@ Widget::Widget(QWidget *parent) :
     QWidget(parent),
     ui(new Ui::Widget)
 {
-
     ui->setupUi(this);
 
+    //creates a timer
+    timer = new QTimer(this);
+    //setup signal and slot
+    connect(timer, SIGNAL(timeout()),this,SLOT(sw1Reader()));
+    connect(timer, SIGNAL(timeout()),this,SLOT(sw2Reader()));
+    connect(timer, SIGNAL(timeout()),this,SLOT(sw3Reader()));
+    connect(timer, SIGNAL(timeout()),this,SLOT(sw4Reader()));
+    //msec
+    timer->start(50);
 }
 
 Widget::~Widget()
@@ -92,11 +100,11 @@ int Widget::getLedPin() const
 }
 
 
-void Widget::on_Sw1Radio_pressed()
+void Widget::sw1Reader()
 {
     int pin = 1012;
     char value;
-    QString swGlobalValue;
+     QString swGlobalValue;
     FILE * fp;
     QString valueString =
             QString("/sys/class/gpio/gpio%1/value").arg(pin);
@@ -104,7 +112,6 @@ void Widget::on_Sw1Radio_pressed()
     rewind(fp);//Set pointer to begining of the file
     fread(&value, sizeof(char),1, fp);
     fclose(fp);
-
     if(value=='1')
     {
         swGlobalValue = QString("1");
@@ -115,10 +122,9 @@ void Widget::on_Sw1Radio_pressed()
     }
     qDebug()<<"print value"<<swGlobalValue;
     ui->sw1Label->setText(swGlobalValue);
-
 }
 
-void Widget::on_Sw2Radio_pressed()
+void Widget::sw2Reader()
 {
     int pin = 1013;
     char value;
@@ -142,7 +148,7 @@ void Widget::on_Sw2Radio_pressed()
     ui->sw2Label->setText(swGlobalValue);
 }
 
-void Widget::on_Sw3Radio_pressed()
+void Widget::sw3Reader()
 {
     int pin = 1014;
     char value;
@@ -166,7 +172,7 @@ void Widget::on_Sw3Radio_pressed()
     ui->sw3Label->setText(swGlobalValue);
 }
 
-void Widget::on_Sw4Radio_pressed()
+void Widget::sw4Reader()
 {
     int pin = 1015;
     char value;

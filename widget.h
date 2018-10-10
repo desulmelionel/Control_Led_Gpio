@@ -8,6 +8,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
+#include <QTimer>
 
 namespace Ui {
 class Widget;
@@ -21,9 +22,8 @@ public:
     explicit Widget(QWidget *parent = nullptr);
     ~Widget();
 
-
     int getLedPin() const;
-
+    QTimer *timer;
 private slots:
 
     void on_onButton_clicked();
@@ -38,13 +38,12 @@ private slots:
 
     void on_led4RadioButton_clicked();
 
-    void on_Sw1Radio_pressed();
+public slots:
+    void sw1Reader();
+    void sw2Reader();
+    void sw3Reader();
+    void sw4Reader();
 
-    void on_Sw2Radio_pressed();
-
-    void on_Sw3Radio_pressed();
-
-    void on_Sw4Radio_pressed();
 
 private:
     Ui::Widget *ui;

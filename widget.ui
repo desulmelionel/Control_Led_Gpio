@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1069</width>
+    <width>741</width>
     <height>222</height>
    </rect>
   </property>
@@ -359,7 +359,7 @@
         <item>
          <layout class="QHBoxLayout" name="horizontalLayout_10">
           <item>
-           <widget class="QRadioButton" name="Sw1Radio">
+           <widget class="QLabel" name="label_8">
             <property name="text">
              <string>SWITCH 1</string>
             </property>
@@ -383,7 +383,7 @@
         <item>
          <layout class="QHBoxLayout" name="horizontalLayout_11">
           <item>
-           <widget class="QRadioButton" name="Sw2Radio">
+           <widget class="QLabel" name="label_9">
             <property name="text">
              <string>SWITCH 2</string>
             </property>
@@ -407,7 +407,7 @@
         <item>
          <layout class="QHBoxLayout" name="horizontalLayout_12">
           <item>
-           <widget class="QRadioButton" name="Sw3Radio">
+           <widget class="QLabel" name="label_10">
             <property name="text">
              <string>SWITCH 3</string>
             </property>
@@ -431,7 +431,7 @@
         <item>
          <layout class="QHBoxLayout" name="horizontalLayout_13">
           <item>
-           <widget class="QRadioButton" name="Sw4Radio">
+           <widget class="QLabel" name="label_11">
             <property name="text">
              <string>SWITCH 4</string>
             </property>
@@ -457,24 +457,6 @@
      </layout>
     </item>
    </layout>
-  </widget>
-  <widget class="QLabel" name="test_label">
-   <property name="geometry">
-    <rect>
-     <x>840</x>
-     <y>46</y>
-     <width>171</width>
-     <height>61</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <pointsize>20</pointsize>
-    </font>
-   </property>
-   <property name="text">
-    <string>TextLabel</string>
-   </property>
   </widget>
  </widget>
  <layoutdefault spacing="6" margin="11"/>

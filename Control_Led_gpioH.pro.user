@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 4.7.1, 2018-10-09T15:10:15. -->
+<!-- Written by QtCreator 4.7.1, 2018-10-10T12:06:07. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
@@ -268,23 +268,28 @@
       <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
       <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">RemoteLinux.DirectUploadStep</value>
       <valuelist type="QVariantList" key="ProjectExplorer.RunConfiguration.LastDeployedFiles">
+       <value type="QString">/home/lion/build-Control_Led_gpioH-zybo_qt-Profile/Control_Led_gpioH</value>
        <value type="QString">/home/lion/build-Control_Led_gpioH-zybo_qt-Release/Control_Led_gpioH</value>
        <value type="QString">/home/lion/build-Control_Led_gpioH-zybo_qt-Release/Control_Led_gpioH</value>
       </valuelist>
       <valuelist type="QVariantList" key="ProjectExplorer.RunConfiguration.LastDeployedHosts">
        <value type="QString">192.168.2.2</value>
        <value type="QString">192.168.2.2</value>
+       <value type="QString">192.168.2.2</value>
       </valuelist>
       <valuelist type="QVariantList" key="ProjectExplorer.RunConfiguration.LastDeployedRemotePaths">
+       <value type="QString">/home/qtproject</value>
        <value type="QString">/home/qtproject</value>
        <value type="QString">/opt/Control_Led_gpioH/bin</value>
       </valuelist>
       <valuelist type="QVariantList" key="ProjectExplorer.RunConfiguration.LastDeployedSysroots">
        <value type="QString">/home/lion/Projects_peta_viva/rootfs</value>
        <value type="QString">/home/lion/Projects_peta_viva/rootfs</value>
+       <value type="QString">/home/lion/Projects_peta_viva/rootfs</value>
       </valuelist>
       <valuelist type="QVariantList" key="ProjectExplorer.RunConfiguration.LastDeployedTimes">
-       <value type="QDateTime">2018-10-09T14:42:54.126</value>
+       <value type="QDateTime">2018-10-09T19:17:39.883</value>
+       <value type="QDateTime">2018-10-10T12:05:28.715</value>
        <value type="QDateTime">2018-10-01T13:04:05.457</value>
       </valuelist>
       <value type="bool" key="RemoteLinux.GenericDirectUploadStep.IgnoreMissingFiles">false</value>
